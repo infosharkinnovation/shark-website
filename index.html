@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shark Innovations Group</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* 🔵 BLUE BUTTON WITH GLOW */
+    .btn {
+        position: absolute;
+        padding: 12px 24px;
+        background: linear-gradient(45deg, #0b3d91, #1e5bd8);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    /* ✨ GLOW + LIFT EFFECT */
+    .btn:hover {
+        box-shadow: 0 0 12px #1e5bd8, 0 0 25px #1e5bd8;
+        transform: translate(-50%, -55%) scale(1.05);
+    }
+
+    /* S-PAC BUTTON */
+    .btn-spac {
+        top: 48%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* SHARK GROUP BUTTON */
+    .btn-group {
+        top: 48%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* 📱 MOBILE VERSION */
+    @media (max-width: 768px) {
+        .btn {
+            position: static;
+            display: block;
+            width: 80%;
+            margin: 12px auto;
+            text-align: center;
+            transform: none;
+            font-size: 16px;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <img src="banner.png" alt="Shark Innovations Group">
+
+    <a href="https://sharkpac.com" target="_blank" class="btn btn-spac">
+        Visit S-PAC
+    </a>
+
+    <a href="https://sharkgroup.co.in" target="_blank" class="btn btn-group">
+        Visit Shark Group
+    </a>
+
+</div>
+
+</body>
+</html>
