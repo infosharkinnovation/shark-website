@@ -1,21 +1,42 @@
-.sharkpac {
+body {
+    margin: 0;
+    overflow: hidden; /* no scroll */
+}
+
+/* Full screen container */
+.screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+/* 🔥 STRETCH IMAGE FULL SCREEN */
+.bg {
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill; /* 🚨 THIS STRETCHES (no gaps at all) */
+}
+
+/* Clickable areas */
+.click {
     position: absolute;
-    top: 42%;
-    left: 6%;
-    width: 36%;
-    height: 12%;
     cursor: pointer;
 }
 
-.sharkgroup {
-    position: absolute;
-    top: 43%;
-    right: 6%;
-    width: 36%;
-    height: 12%;
-    cursor: pointer;
+/* LEFT */
+.sharkpac {
+    top: 34%;
+    left: 8%;
+    width: 34%;
+    height: 18%;
 }
-.sharkpac:hover,
-.sharkgroup:hover {
-    background: rgba(255, 0, 0, 0.3);
+
+/* RIGHT */
+.sharkgroup {
+    top: 34%;
+    right: 8%;
+    width: 34%;
+    height: 18%;
 }
